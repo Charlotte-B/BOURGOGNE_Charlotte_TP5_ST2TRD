@@ -1,11 +1,37 @@
 Part 1: Questions
 
-
-
 1. What is this code about?
+
 2. Can you clearly identify the name of all the goods stored in the Guilded Rose?
-3. What happens when the day is over?
-4. What happens to cheese when the day is over?
+
+
+3. What happens when the day is over? [pas fini]
+A la fin de la journée, la valeur de quality et sellIn de chaque produit sont recalculé 
+en fonction de la nature du produit. 
+sellIn incrémente de -1 pour chaque produit à par pour Sulfuras qui reste nulle
+En fonction de cette valeur sellIn, la valeur quality varie différement pour chaque produit
+
+
+4. What happens to cheese when the day is over? 
+[Voir si pareil que concert]
+[Si 5 < sellIn <= 10 alors quality = quality*2
+Si sellIn <= 5 alors quality = quality*3]
+
+La quality du fromage augmente en fonction du temps
+Plus il se rapproche de sa date de péremption plus il prend de la valeur en quality
+A la fin de la journée, sa valeur sellIn incrémente de -1 et sa quality augmente.
+A par si sa date de péremption est dépassé alors sa quality diminue 2 fois plus vite
+Si sellIn < 0 alors quality = quality:2
+
+
 5. What happens when a concert ticket goes over its expiration day?
+Lorsque le concert ticket goes over its expiration day, sa qualité est à 0 
+Car le concert a déjà eu lieu et il n'est plus utile. 
+
+
 6. What makes this code hard to read?
+
+
 7. Do you think the rules are clear enough so that you could rework the entire solution from scratch?
+
+
