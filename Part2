@@ -1,3 +1,8 @@
 Part 2
 
 What is the benefit of adding tests here ?
+
+Before changing the code, we need to understand how it works. 
+To verify that we won't introduce accidental changes when modifying the code, we need to write unit tests. 
+These tests can also identify errors that are already present in the code. 
+It also allows you to decide on an improvement strategy before changing the code.
