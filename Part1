@@ -2,14 +2,34 @@ Part 1: Questions
 
 1. What is this code about?
 
+This code is a code kata. It is a programming exercise that allows programmers to hone their skills through practice and repetition.
+In our case (Gilded Rose), we need to calculate the quality of each product at the end of the day. 
+The quality of a product is calculated according to its type and its deadline.
+Each type of product follows a specific rule to calculate its quality.
+Each product has the value "SellIn" (number of days left before its expiration date) and "Quality" (denotes how valuable the item is).
+
+
 2. Can you clearly identify the name of all the goods stored in the Guilded Rose?
 
+Products that follow a specific rule are:
+- Aged Brie
+- Sulfuras
+- Backstage passes
+- Conjured
 
-3. What happens when the day is over? [pas fini]
-A la fin de la journée, la valeur de quality et sellIn de chaque produit sont recalculé 
-en fonction de la nature du produit. 
-sellIn incrémente de -1 pour chaque produit à par pour Sulfuras qui reste nulle
-En fonction de cette valeur sellIn, la valeur quality varie différement pour chaque produit
+The products stored in the tavern:
++5 Dexterity Vest
+Elixir of the Mongoose
+Sulfuras, Hand of Ragnaros (x2)
+Backstage passes to a TAFKAL80ETC concert (x3)
+Conjured Mana Cake
+
+
+3. What happens when the day is over? 
+
+At the end of the day, the Quality and SellIn value of each product are recalculated according to the nature of the product.
+SellIn increments by -1 for each product except for Sulfuras which remains zero.
+Depending on this SellIn value, the Quality value varies differently for each product.
 
 
 4. What happens to cheese when the day is over? 
