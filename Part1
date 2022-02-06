@@ -33,25 +33,28 @@ Depending on this SellIn value, the Quality value varies differently for each pr
 
 
 4. What happens to cheese when the day is over? 
-[Voir si pareil que concert]
-[Si 5 < sellIn <= 10 alors quality = quality*2
-Si sellIn <= 5 alors quality = quality*3]
 
-La quality du fromage augmente en fonction du temps
-Plus il se rapproche de sa date de péremption plus il prend de la valeur en quality
-A la fin de la journée, sa valeur sellIn incrémente de -1 et sa quality augmente.
-A par si sa date de péremption est dépassé alors sa quality diminue 2 fois plus vite
-Si sellIn < 0 alors quality = quality:2
+The Quality of the cheese increases with time.
+At the end of the day, its SellIn value increases by -1 and its Quality increases by +1.
+Even after passing its expiration date, its Quality value increases by +1.
+However, its Quality must be between 0 and 50 inclusive.
 
 
 5. What happens when a concert ticket goes over its expiration day?
-Lorsque le concert ticket goes over its expiration day, sa qualité est à 0 
-Car le concert a déjà eu lieu et il n'est plus utile. 
+
+When a concert ticket passes its expiration date, its Quality value drops to 0.
+The ticket can no longer be used because the concert has already taken place. 
+It has no more value and therefore no more Quality.
 
 
 6. What makes this code hard to read?
 
+It is difficult to read the code because the code doesn't have a good pattern strategy.
+It lacks classes to simplify the code.
+There are too many IF loops, they should be changed by switches.
+The code should be made more readable and understandable with a strategy pattern.
+
 
 7. Do you think the rules are clear enough so that you could rework the entire solution from scratch?
 
-
+The rules are clear enough.
