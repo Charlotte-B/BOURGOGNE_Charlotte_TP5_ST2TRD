@@ -36,7 +36,7 @@ Depending on this SellIn value, the Quality value varies differently for each pr
 
 The Quality of the cheese increases with time.
 At the end of the day, its SellIn value increases by -1 and its Quality increases by +1.
-Even after passing its expiration date, its Quality value increases by +1.
+Even after passing its expiration date, its Quality value increases by +2.
 However, its Quality must be between 0 and 50 inclusive.
 
 
